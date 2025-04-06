@@ -9,8 +9,8 @@ from threading import Thread
 from pymongo import MongoClient
 
 # Configuration
-TOKEN = '7784685155:AAFcBzKb-TiFoAoRDZ5EBQQzDcwn_s-4KnY'
-ADMIN_USER_ID = 5344691638
+TOKEN = '6858504214:AAHXUrJMZt7_mOb48SxCzkJzm8GyoubZXaU'
+ADMIN_USER_ID = 1789079780
 MONGO_URI = 'mongodb+srv://VIKASH:BadnamBadshah@cluster0.jv9he.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tlsAllowInvalidCertificates=true'  # Update with your MongoDB URI
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
@@ -56,7 +56,7 @@ def redeem_key(user_id, key):
 @bot.message_handler(commands=['genkey'])
 def handle_genkey(message):
     if message.from_user.id != ADMIN_USER_ID:
-        bot.reply_to(message, "𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘿𝙈-> @Bgmi_owner_420")
+        bot.reply_to(message, "𝙊𝙉𝙇𝙔 𝙊𝙒𝙉𝙀𝙍 𝘿𝙈-> @VIP_FIGHTER_OWNER")
         return
 
     try:
@@ -147,7 +147,7 @@ def handle_text(message):
         else:
             bot.reply_to(message, "🔑 NO ACCOUNT")
     elif message.text == "HELP 🆘":
-        bot.reply_to(message, "𝘿𝙈-> @Bgmi_owner_420")
+        bot.reply_to(message, "𝘿𝙈-> @VIP_FIGHTER_OWNER")
     else:
         bot.reply_to(message, "Invalid option.")
 
