@@ -17,7 +17,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 
 # Initialize MongoDB Client
 client = MongoClient(MONGO_URI)
-db = client['VIKASH']
+db = client['FIGHTER']
 keys_collection = db['keys']
 users_collection = db['users']
 
